@@ -13,6 +13,8 @@ app.use('/employee', userRoutes);
 const DB_USER = process.env.DB_USER;
 const DB_PASSWORD = encodeURIComponent(process.env.DB_PASSWORD);
 
+console.log('deu certo');
+
 mongoose
   .connect(
     `mongodb+srv://${DB_USER}:${DB_PASSWORD}@lab2dev.bawjg.mongodb.net/?retryWrites=true&w=majority`,
