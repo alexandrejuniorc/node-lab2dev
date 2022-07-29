@@ -4,6 +4,7 @@ const User = mongoose.model('User', {
   name: String,
   role: String,
   birthday_date: String,
+  created_at: Date,
   salary: Number,
 });
 
